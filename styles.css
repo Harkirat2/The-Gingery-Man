@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1.1vw;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 5vw;
+}
+
+body {
+    font-size: 30px;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 30px;
+    margin-top: 100vh;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #000;
+    color: #fff;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.background {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    top: -35vh;
+}
+
+.ground {
+    width: 100vw;
+    height: 140vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    position: absolute;
+    bottom: -1.5vh;
+}
+
+.houses {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 140vh;
+    bottom: -19vh;
+    left: 1vw;
+}
+
+#trees {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 84vw;
+    height: 120vh;
+    bottom: -8vh;
+    left: 9vw;
+}
+
+#mountains {
+    position: absolute;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 98vh;
+    top: -44vh;
+}
+
+#sun {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 115vh;
+    left: -20vw;
+    top: -43vh;
+}
+
+#text {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 120vh;
+    left: 6vw;
+    top: -40vh;
+}
+
+#story1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    top: 100vh;
+    color: black;
+    background-color: grey;
+    padding-top: 50vh;
+}
+
+#page1 {
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    top: 200vh;
+}
+
+.image1 {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.box1 {
+    position: absolute;
+    background-color: rgb(128, 128, 128, 60%);
+    width: 40vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    left: 55vw;
+    top: 22vh;
+    padding: 20px;
+    border-radius: 30px;
+    contain: content;
+}
+
+#audio1 {
+    position: absolute;
+    top: 3.5vh;
+    left: 10vw;
+    border-radius: 100px;
+    width: 17vw;
+}
+
+#audio2 {
+    position: absolute;
+    top: 3.5vh;
+    left: 10vw;
+    border-radius: 100px;
+    width: 17vw;
+}
+
+#audio3 {
+    position: absolute;
+    top: 3.5vh;
+    left: 10vw;
+    border-radius: 100px;
+    width: 17vw;
+}
+
+#page2 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 300vh;
+}
+
+#image2 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 50vw;
+}
+
+#box2 {
+    position: absolute;
+    background-color: rgb(128, 128, 128, 60%);
+    width: 40vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    right: 55vw;
+    border-radius: 30px;
+    top: 22vh;
+    padding: 20px;
+}
+
+#page3 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 400vh;
+}
+
+#image3 {
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+}
+
+#box3 {
+    position: absolute;
+    background-color: rgb(128, 128, 128, 60%);
+    width: 40vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    padding: 20px;
+    top: 22vh;
+    left: 55vw;
+}
+
+#page4 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 500vh;
+}
+
+#image4 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#box4 {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container {
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: opacity 500ms;
+    width: 100%;
+}
+
+.Snow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    animation: animationSnow 4s ease-in-out infinite;
+}
+
+.snow-video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes animationSnow {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(100px, 50vh);
+    }
+}
