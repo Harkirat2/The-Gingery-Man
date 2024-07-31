@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    scroll-snap: y proximity;
 }
 
 body {
@@ -67,7 +66,6 @@ header ul li a.active {
     justify-content: center;
     border-radius: 20px;
     background: linear-gradient(to bottom right, #26c0ff, #1fd655);
-    scroll-snap-align: center;
 }
 .card img {
     position: absolute;
