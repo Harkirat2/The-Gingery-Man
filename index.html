@@ -161,26 +161,31 @@
 
             function myFunc() {
                 let story = document.getElementById("story1");
-                //let home = document.getElementById("home");
+                let home = document.getElementById("snow-container");
+                
                 let storyCheck = document.getElementById("storyCheck");
                 let homeCheck = document.getElementById("homeCheck");
 
+                
+                let homeVal = home.getBoundingClientRect();
                 let storyVal = story.getBoundingClientRect();
                 //let homeVal = home.getBoundingClientRect();
 
                 let storyTop = storyVal.top;
-                //let homeTop = homeVal.top;
+                let homeTop = homeVal.top;
+                
                 let storyBottom = storyVal.bottom;
-                //let homeBottom = homeVal.bottom;
+                let homeBottom = homeVal.bottom;
+                
                 midHeight = window.innerHeight / 2;
 
                 console.log(storyTop, window.scrollY);
-                if (storyTop < midHeight && storyTop > -10) {
-                    storyCheck.classList.add("active");
-                    homeCheck.classList.remove("active");
-                } else {
+                if (homeBottom < midHeight && homeTop > -midHeight) {
                     homeCheck.classList.add("active");
                     storyCheck.classList.remove("active");
+                } else {
+                    storyCheck.classList.add("active");
+                    homeCheck.classList.remove("active");
                 }
             }
 
