@@ -55,7 +55,6 @@ header ul li a.active {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    scroll-snap-align: center;
 }
 
 .card {
@@ -68,6 +67,7 @@ header ul li a.active {
     justify-content: center;
     border-radius: 20px;
     background: linear-gradient(to bottom right, #26c0ff, #1fd655);
+    scroll-snap-align: center;
 }
 .card img {
     position: absolute;
